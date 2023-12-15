@@ -39,8 +39,8 @@ spec:
             - name: DB_DSN
               valueFrom:
                 secretKeyRef:
-                  name: {{ .Values.storage.name }}
-                  key: {{ .Values.storage.db_dsn }}
+                  name: {{ .Values.storage.secretName }}
+                  key: {{ .Values.storage.secretKey }}
           imagePullPolicy: {{ .Values.image.pullPolicy }}
           ports:
             - name: http

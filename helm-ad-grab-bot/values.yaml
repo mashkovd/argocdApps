@@ -11,8 +11,8 @@ image:
   tag: ""
 
 storage:
-  name: postgres
-  db_dsn: postgres://paedzhlm:NddMDT98T5zTdqcQ-hn6eQ5erAzmYeBE@trumpet.db.elephantsql.com:5432/paedzhlm
+  secretName: dsn
+  secretKey: database-dsn
 
 imagePullSecrets: []
 nameOverride: ""
