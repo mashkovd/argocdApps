@@ -32,9 +32,18 @@ spec:
         {{- toYaml .Values.podSecurityContext | nindent 8 }}
       containers:
         - name: {{ .Chart.Name }}
+
+
           securityContext:
             {{- toYaml .Values.securityContext | nindent 12 }}
           image: "{{ .Values.image.repository }}:{{ .Values.image.tag | default .Chart.AppVersion }}"
+          env:
+            - name: TELEGRAM_BOT_TOKEN
+              value: {{ .Values.image.env.TELEGRAM_BOT_TOKEN | default "" }}
+            - name: DB_DSN
+              value: {{ .Values.image.env.DB_DSN | default "" }}
+            - name: TELEGRAM_CHAT_ID
+              value: {{ .Values.image.env.TELEGRAM_CHAT_ID | default "" }}
           imagePullPolicy: {{ .Values.image.pullPolicy }}
           ports:
             - name: http
