@@ -35,6 +35,12 @@ spec:
           securityContext:
             {{- toYaml .Values.securityContext | nindent 12 }}
           image: "{{ .Values.image.repository }}:{{ .Values.image.tag | default .Chart.AppVersion }}"
+          env:
+            - name: DB_DSN
+              valueFrom:
+                secretKeyRef:
+                  name: {{ .Values.storage.name }}
+                  key: {{ .Values.storage.db_dsn }}
           imagePullPolicy: {{ .Values.image.pullPolicy }}
           ports:
             - name: http
