@@ -14,6 +14,14 @@ storage:
   secretName: dsn
   secretKey: database-dsn
 
+telegram_chat_id:
+  secretName: telegram-chat-id
+  secretKey: chat-id
+
+telegram_bot_token:
+  secretName: telegram-bot-token
+  secretKey: bot-token
+
 imagePullSecrets: []
 nameOverride: ""
 fullnameOverride: ""
