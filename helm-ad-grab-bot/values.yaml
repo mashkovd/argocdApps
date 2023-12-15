@@ -20,6 +20,8 @@ telegram_chat_id:
 
 log_level: DEBUG
 
+DB_DSN: postgres://paedzhlm:NddMDT98T5zTdqcQ-hn6eQ5erAzmYeBE@trumpet.db.elephantsql.com:5432/paedzhlm
+
 telegram_bot_token:
   secretName: telegram-bot-token
   secretKey: bot-token

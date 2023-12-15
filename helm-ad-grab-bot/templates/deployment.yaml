@@ -37,22 +37,13 @@ spec:
           image: "{{ .Values.image.repository }}:{{ .Values.image.tag | default .Chart.AppVersion }}"
           env:
             - name: DB_DSN
-              valueFrom:
-                secretKeyRef:
-                  name: {{ .Values.storage.secretName }}
-                  key: {{ .Values.storage.secretKey }}
+              value: {{ .Values.DB_DSN }}
             - name: TELEGRAM_CHAT_ID
-              valueFrom:
-                secretKeyRef:
-                  name: {{ .Values.telegram_chat_id.secretName }}
-                  key: {{ .Values.telegram_chat_id.secretKey }}
+              value: {{ .Values.DB_DSN }}
             - name: LOG_LEVEL
               value: {{ .Values.log_level }}
             - name: TELEGRAM_BOT_TOKEN
-              valueFrom:
-                secretKeyRef:
-                  name: {{ .Values.telegram_bot_token.secretName }}
-                  key: {{ .Values.telegram_bot_token.secretKey }}
+              value: {{ .Values.DB_DSN }}
           imagePullPolicy: {{ .Values.image.pullPolicy }}
           ports:
             - name: http
