@@ -18,12 +18,6 @@ telegram_chat_id:
   secretName: telegram-chat-id
   secretKey: chat-id
 
-log_level: DEBUG
-
-DB_DSN: "postgres://paedzhlm:NddMDT98T5zTdqcQ-hn6eQ5erAzmYeBE@trumpet.db.elephantsql.com:5432/paedzhlm"
-TELEGRAM_CHAT_ID: "2078880206:AAGLhX5JsKkhmFSkcW6ICefSNypwSIer8sw"
-TELEGRAM_BOT_TOKEN: "qwertyuiopasdfghjklzxcvbnm"
-
 telegram_bot_token:
   secretName: telegram-bot-token
   secretKey: bot-token
