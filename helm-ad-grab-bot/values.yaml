@@ -10,10 +10,10 @@ image:
   # Overrides the image tag whose default is the chart appVersion.
   tag: ""
 
-  env:
-    TELEGRAM_BOT_TOKEN: "2078880206:AAGLhX5JsKkhmFSkcW6ICefSNypwSIer8sw"
-    DB_DSN: "postgres://paedzhlm:NddMDT98T5zTdqcQ-hn6eQ5erAzmYeBE@trumpet.db.elephantsql.com:5432/paedzhlm"
-    TELEGRAM_CHAT_ID: "-1001509023379"
+env:
+  TELEGRAM_BOT_TOKEN: "2078880206:AAGLhX5JsKkhmFSkcW6ICefSNypwSIer8sw"
+  DB_DSN: "postgres://paedzhlm:NddMDT98T5zTdqcQ-hn6eQ5erAzmYeBE@trumpet.db.elephantsql.com:5432/paedzhlm"
+  TELEGRAM_CHAT_ID: "-1001509023379"
 
 imagePullSecrets: []
 nameOverride: ""
