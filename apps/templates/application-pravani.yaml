@@ -16,4 +16,4 @@ spec:
     targetRevision: {{ .Values.spec.source.targetRevision }}
   syncPolicy:
     syncOptions:
-      - CreateNamespace=true
+    - CreateNamespace=true
