@@ -6,7 +6,6 @@ replicaCount: 1
 
 image:
   repository: mashkovdm/prajavani
-  tag: "0.0.1"
   pullPolicy: IfNotPresent
 
 containerPort: 8008
