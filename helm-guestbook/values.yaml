@@ -8,7 +8,7 @@ image:
   repository: mashkovdm/prajavani
   pullPolicy: IfNotPresent
 
-containerPort: 8008
+containerPort: 8000
 
 service:
   type: ClusterIP
