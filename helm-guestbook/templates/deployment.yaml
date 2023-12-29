@@ -40,7 +40,10 @@ spec:
               value: {{ .Values.db_name }}
             - name: DB_USER
               value: {{ .Values.db_user }}
-
+            - name: DB_PORT
+              value: {{ .Values.db_port }}
+            - name: GOOGLE_CLIENT_ID
+              value: {{ .Values.google_client_id }}
 
           imagePullPolicy: {{ .Values.image.pullPolicy }}
           ports:

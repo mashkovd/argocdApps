@@ -64,6 +64,6 @@ db_name:
 db_user:
   'postgres'
 db_port:
-  48612
+  "48612"
 google_client_id:
   '409813168375-mkprobej5t7bd2ji7vetfcfd9h12j5le.apps.googleusercontent.com'
