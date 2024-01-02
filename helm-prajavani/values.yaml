@@ -50,6 +50,7 @@ ingress:
   annotations:
     ingress.kubernetes.io/rewrite-target: "/"
     nginx.ingress.kubernetes.io/ssl-redirect: "true"
+    traefik.ingress.kubernetes.io/router.tls: "true"
     nginx.ingress.kubernetes.io/use-regex: "true"
     nginx.ingress.kubernetes.io/proxy-buffer-size: "128k"
     cert-manager.io/cluster-issuer: letsencrypt-prod
